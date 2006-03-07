@@ -15,6 +15,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	bbf5ccee532c874d32603b1e10f21d1b
 URL:		http://pear.php.net/package/Validate_Finance/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear >= 4:1.0-4
 Requires:	php-common >= 3:4.2.0
