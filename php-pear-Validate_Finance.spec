@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Validation class for finance
-Summary(pl):	%{_pearname} - Klasa sprawdzaj±ca poprawno¶æ dla finansów
+Summary(pl.UTF-8):   %{_pearname} - Klasa sprawdzajÄ…ca poprawnoÅ›Ä‡ dla finansÃ³w
 Name:		php-pear-%{_pearname}
 Version:	0.5.3
 Release:	1
@@ -30,15 +30,15 @@ Package to validate Finance data. It includes:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Pakiet do sprawdzania poprawno¶ci danych finansowych. Dotyczy to:
-- numerów IBAN
+%description -l pl.UTF-8
+Pakiet do sprawdzania poprawnoÅ›ci danych finansowych. Dotyczy to:
+- numerÃ³w IBAN
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -47,7 +47,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
