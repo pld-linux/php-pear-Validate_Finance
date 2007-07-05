@@ -7,19 +7,20 @@
 Summary:	%{_pearname} - Validation class for finance
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla finansów
 Name:		php-pear-%{_pearname}
-Version:	0.5.3
+Version:	0.5.4
 Release:	1
 Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	eb53cf8c75394345fe7506956f556baf
+# Source0-md5:	f670dbac6b7e25588eb6985f9061afec
 URL:		http://pear.php.net/package/Validate_Finance/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-pear >= 4:1.0-4
 Requires:	php-common >= 3:4.2.0
+Requires:	php-pear >= 4:1.0-4
+Requires:	php-pear-PEAR-core >= 1:1.4.0
 Requires:	php-pear-Validate >= 0.5.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
