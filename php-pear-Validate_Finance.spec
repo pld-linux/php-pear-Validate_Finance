@@ -8,7 +8,7 @@ Summary:	%{_pearname} - Validation class for finance
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla finansów
 Name:		php-pear-%{_pearname}
 Version:	0.5.4
-Release:	1
+Release:	2
 Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
