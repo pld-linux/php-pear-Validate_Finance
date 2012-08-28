@@ -1,22 +1,20 @@
+%define		status		alpha
+%define		pearname	Validate_Finance
 %include	/usr/lib/rpm/macros.php
-%define		_class		Validate
-%define		_subclass	Finance
-%define		_status		alpha
-%define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_pearname} - Validation class for finance
-Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla finansów
-Name:		php-pear-%{_pearname}
-Version:	0.5.5
-Release:	3
+Summary:	%{pearname} - Validation class for finance
+Summary(pl.UTF-8):	%{pearname} - Klasa sprawdzająca poprawność dla finansów
+Name:		php-pear-%{pearname}
+Version:	0.5.6
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	f7a6bb9a0adf24dd4c2410d632dc4da2
+Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
+# Source0-md5:	4abf83a0bdb2d5cf3f0b54996617c33a
 URL:		http://pear.php.net/package/Validate_Finance/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.2.0
+BuildRequires:	rpmbuild(macros) >= 1.580
+Requires:	php(core) >= 4.2.0
 Requires:	php-pear >= 4:1.0-4
 Requires:	php-pear-PEAR-core >= 1:1.4.0
 Requires:	php-pear-Validate >= 0.5.0
@@ -28,13 +26,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Package to validate Finance data. It includes:
 - IBAN
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %description -l pl.UTF-8
 Pakiet do sprawdzania poprawności danych finansowych. Dotyczy to:
 - numerów IBAN
 
-Ta klasa ma w PEAR status: %{_status}.
+Ta klasa ma w PEAR status: %{status}.
 
 %prep
 %pear_package_setup
@@ -51,5 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/*.php
+%{php_pear_dir}/Validate/*.php
+%{php_pear_dir}/Validate/Finance/*.php
