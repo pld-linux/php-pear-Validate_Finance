@@ -1,6 +1,5 @@
 %define		status		alpha
 %define		pearname	Validate_Finance
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Validation class for finance
 Summary(pl.UTF-8):	%{pearname} - Klasa sprawdzająca poprawność dla finansów
 Name:		php-pear-%{pearname}
